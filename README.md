@@ -12,3 +12,60 @@ To analyze these features and implement machine learning techniques to classify 
 
 ### DataSet :
 (https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset)
+
+## Data Preprocessing
+
+### Handling Missing and Duplicate Values
+- Checked for null values and duplicate records, ensuring a clean dataset.
+
+### Exploratory Data Analysis (EDA)
+- **Univariate Analysis**: Examined individual feature distributions.
+- **Bivariate Analysis**: Analyzed relationships between two variables.
+- **Multivariate Analysis**: Explored interactions among multiple features.
+- **Skewness Correction**: Applied transformations to normalize skewed features.
+- **Final Cleaned Dataset**: Prepared a refined dataset for further processing.
+
+## Feature Engineering
+
+### Encoding Categorical Features
+- Converted categorical data into numerical format where necessary.
+
+### Feature Selection
+- Used the **SelectKBest** method to select the most relevant features.
+- Applied the **Elbow Method** to determine the optimal number of features (k).
+- Selected **50,000 random instances** for model training and evaluation.
+
+### Feature Scaling
+- Standardized features to ensure uniformity.
+
+### Dimensionality Reduction
+- Applied **Principal Component Analysis (PCA)** to reduce the dataset to **10 features**.
+
+## Model Training and Evaluation
+
+### Train-Test Split
+- Divided the dataset into training and test sets.
+
+### Machine Learning Models Used
+- **Random Forest**
+- **XGBoost**
+- **Support Vector Machine (SVM)**
+- **Decision Tree (Two variations)**
+- **Logistic Regression**
+
+### Evaluation Metrics
+- **Accuracy**
+- **Precision, Recall, and F1-Score**
+- **Training vs. Test Accuracy Comparison**
+- **Overfitting Issue**: Initially observed overfitting in some models.
+
+## Hyperparameter Tuning
+
+- Applied hyperparameter tuning to all models to improve performance.
+
+### Best Performing Model
+- **Decision Tree** achieved an accuracy of **97%** after tuning.
+
+### Final Model Validation
+- Compared training and test accuracy to confirm model performance and generalization.
+
