@@ -68,4 +68,21 @@ To analyze these features and implement machine learning techniques to classify 
 
 ### Final Model Validation
 - Compared training and test accuracy to confirm model performance and generalization.
+- 
+### Limitations of the model:
+* Generalization Issues – Might fail on new phishing techniques or domains not in training data.
+* Class Imbalance – If legitimate URLs dominate, the model may favor non-phishing classifications.
+* Overfitting – If overly tuned to training data, it might perform poorly on unseen URLs.
+* Latency & Performance – Too slow for real-time use if complex, making deployment difficult.
+* Lack of Adaptive Learning – Phishing tactics evolve, and a static model may become outdated.
+* Lack of Real-Time Analysis – The model may not work effectively on live URLs without additional web-based features.
+* Static Analysis Constraint – Only analyzing the URL structure may miss phishing pages that dynamically load content.
+
+### Future Scopes :
+* Integrate NLP Techniques – Use TF-IDF, word embeddings, or transformers (BERT/LSTM) to analyze URL text patterns.
+* Enhance Feature Engineering – Include domain similarity (Levenshtein distance), tokenization, and n-gram analysis.
+* Train Deep Learning Models – Use CNNs, RNNs, or transformers to better understand URL structures.
+* Handle Real-Time URL Analysis – Implement live detection using APIs (e.g., Google Safe Browsing, VirusTotal).
+* Improve Model Generalization – Regularly update the dataset to detect new phishing tactics.
+* Optimize for Deployment – Convert the model into a lightweight API or browser extension for real-time use.
 
